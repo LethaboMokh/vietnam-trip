@@ -1,114 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Outfit Planner – Vietnam</title>
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" type="image/svg+xml" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vietnam Outfits</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" type="image/svg+xml">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #f9f7f1;
-      color: #2e2e2e;
-    }
-    header {
-      background: #fff;
-      padding: 20px 40px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    header img {
-      width: 40px;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin: 0;
-    }
-    nav {
-      background: #b22222;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-    nav a {
-      color: #fff;
-      padding: 14px 18px;
-      display: block;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background-color: #7b1616;
-      border-radius: 5px;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 30px;
-    }
-    ul {
-      padding-left: 20px;
-      font-size: 1.1rem;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #888;
-      font-size: 0.9rem;
-      border-top: 1px solid #ddd;
-      margin-top: 60px;
-    }
+    body { background-color: #f9f7f1; font-family: 'Georgia', serif; color: #2e2e2e; margin: 0; padding: 0; }
+    header { background: #fff; padding: 20px 40px; display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    header img.flag { width: 40px; height: auto; }
+    header h1 { font-size: 2em; margin: 0; color: #4a4a4a; }
+    nav { background-color: #b22222; }
+    nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; }
+    nav li { display: inline; }
+    nav a { display: block; padding: 14px 18px; color: #fff; font-weight: 600; text-decoration: none; }
+    nav a:hover { background-color: #7b1616; border-radius: 4px; }
+    main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    h2 { color: #b22222; font-size: 1.8rem; margin-bottom: 20px; }
+    ul { padding-left: 20px; font-size: 1.1rem; }
+    li { margin-bottom: 15px; }
+    .outfit-image { width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin: 20px auto; display: block; }
+    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #888; margin-top: 40px; border-top: 1px solid #ddd; }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Vietnam flag" />
-    <h1>Outfit Planner</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Vietnam flag" class="flag" />
+    <h1>Vietnam Outfits</h1>
   </header>
-
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="packing.html">Packing</a></li>
+      <li><a href="packing.html">Packing List</a></li>
       <li><a href="outfits.html">Outfits</a></li>
       <li><a href="itinerary.html">Itinerary</a></li>
-      <li><a href="tips.html">Tips</a></li>
+      <li><a href="tips.html">Travel Tips</a></li>
     </ul>
   </nav>
-
   <main>
-    <img src="https://images.unsplash.com/photo-1607082349560-0465f8008e28?auto=format&fit=crop&w=900&q=80" alt="Fashionable Travel Outfits" />
+    <h2>Suggested Daily Outfits</h2>
     <ul>
-      <li><strong>12 Dec:</strong> Airport outfit – layers + slip-on shoes</li>
-      <li><strong>13 Dec:</strong> Relaxed dinner fit</li>
-      <li><strong>14 Dec:</strong> Casual daywear + pool outfit</li>
-      <li><strong>15 Dec:</strong> Light clothes for Ha Long Bay cruise</li>
-      <li><strong>16 Dec:</strong> Comfy resort wear</li>
-      <li><strong>17 Dec:</strong> Hiking outfit for Ninh Binh</li>
-      <li><strong>18 Dec:</strong> Swimwear + relaxed beachwear</li>
-      <li><strong>19–21 Dec:</strong> Mix of dresses, shorts, tank tops for beach/bar days</li>
-      <li><strong>22–23 Dec:</strong> Travel clothes for long haul flight</li>
+      <li>12 Dec: Airport outfit – comfy layers, trainers and lightweight scarf</li>
+      <li>13 Dec: Relaxed dinner fit – flowy trousers & linen shirt or dress</li>
+      <li>14 Dec: Casual fit for coffee & walking – sundress or shorts + top</li>
+      <li>15 Dec: Boat-friendly – swimsuit under shorts + breezy cover-up</li>
+      <li>16 Dec: Pool day – swimwear, wide hat, sunnies</li>
+      <li>17 Dec: Ninh Binh adventure – activewear + sun protection</li>
+      <li>18–21 Dec: Beach bars & island hopping – beach dresses, shorts, sandals</li>
+      <li>22 Dec: Flight home – comfy travel clothes again</li>
     </ul>
+    <img src="https://images.unsplash.com/photo-1617727553255-3b27c11ff5ea?auto=format&fit=crop&w=800&q=80" alt="Beach outfit inspiration" class="outfit-image">
+    <img src="https://images.unsplash.com/photo-1606813902486-c2b28be94970?auto=format&fit=crop&w=800&q=80" alt="Travel outfit inspiration" class="outfit-image">
   </main>
-
   <footer>
-    © 2025 Vietnam Travel Countdown | Outfit Planning
+    © 2025 Vietnam Travel Countdown | Crafted with ❤️ by Lethabo
   </footer>
 </body>
 </html>
