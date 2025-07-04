@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vietnam Countdown</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f5f5f5, #fff9f0);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff4e4e;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .countdown {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .reminder {
+      background: #fff3cd;
+      border-left: 6px solid #ffc107;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .itinerary {
+      background: #e7f1ff;
+      padding: 20px;
+      border-left: 6px solid #4dabf7;
+    }
+    .nav {
+      margin-top: 30px;
+    }
+    .nav a {
+      display: inline-block;
+      margin-right: 15px;
+      text-decoration: none;
+      background: #4dabf7;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vietnam Adventure Countdown</h1>
+    <div class="countdown" id="countdown">Loading countdown...</div>
+  </header>
+
+  <section>
+    <div class="reminder">
+      ✈️ <strong>Reminder:</strong> Buy your flights by **September** to get the best rates!
+    </div>
+
+    <div class="itinerary">
+      <h2>Trip Preview: 12–22 December</h2>
+      <ul>
+        <li><strong>12 Dec:</strong> Airport outfit + arrival in Hanoi</li>
+        <li><strong>14 Dec:</strong> Coffee shops, pool, Old Quarter & food tour</li>
+        <li><strong>15 Dec:</strong> Ha Long Bay day trip</li>
+        <li><strong>17 Dec:</strong> Ninh Binh adventure</li>
+        <li><strong>18–21 Dec:</strong> Beaches, bars & island hopping in Phu Quoc</li>
+        <li><strong>22 Dec:</strong> Return flight to Hanoi/Johannesburg</li>
+      </ul>
+    </div>
+
+    <div class="nav">
+      <a href="#packing">Packing List</a>
+      <a href="#outfits">Outfit Planner</a>
+      <a href="#guide">Daily Guide</a>
+      <a href="#tips">Travel Tips</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Vietnam Travel Countdown | Created with ✈️ by Lethabo
+  </footer>
+
+  <script>
+    const countdown = () => {
+      const countDate = new Date("December 12, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      const gap = countDate - now;
+
+      const second = 1000;
+      const minute = second * 60;
+      const hour = minute * 60;
+      const day = hour * 24;
+
+      const days = Math.floor(gap / day);
+      const hours = Math.floor((gap % day) / hour);
+      const minutes = Math.floor((gap % hour) / minute);
+      const seconds = Math.floor((gap % minute) / second);
+
+      document.getElementById("countdown").innerText = 
+        `${days}d ${hours}h ${minutes}m ${seconds}s until takeoff!`;
+    };
+
+    setInterval(countdown, 1000);
+  </script>
+</body>
+</html>
