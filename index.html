@@ -4,23 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vietnam Countdown</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/747/747376.png" type="image/png" />
   <style>
     body {
+      background: linear-gradient(to bottom right, #FFF8E1, #003366);
+      color: #003366;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #003366, #FFF8E1);
-      color: #333;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #ff4e4e;
-      color: white;
+      background-color: #FFD700;
+      color: #003366;
       padding: 30px;
       text-align: center;
     }
     h1 {
       margin: 0;
       font-size: 2.5em;
+      font-weight: bold;
     }
     .countdown {
       font-size: 1.5em;
@@ -32,33 +34,47 @@
       margin: auto;
     }
     .reminder {
-      background: #fff3cd;
-      border-left: 6px solid #ffc107;
+      background: #FFF8E1;
+      border-left: 6px solid #FFD700;
       padding: 15px;
       margin-bottom: 20px;
+      color: #003366;
     }
     .itinerary {
       background: #e7f1ff;
       padding: 20px;
       border-left: 6px solid #4dabf7;
     }
-    .nav {
-      margin-top: 30px;
-    }
-    .nav a {
-      display: inline-block;
-      margin-right: 15px;
-      text-decoration: none;
-      background: #4dabf7;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-    }
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
-      color: #888;
+      color: #003366;
+    }
+    nav {
+      background-color: #DA291C;
+    }
+    .navbar {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar li {
+      margin: 0;
+    }
+    .navbar a {
+      display: block;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: #FFF8E1;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      background-color: #FFD700;
+      color: #003366;
     }
   </style>
 </head>
@@ -68,9 +84,19 @@
     <div class="countdown" id="countdown">Loading countdown...</div>
   </header>
 
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packing.html">Packing List</a></li>
+      <li><a href="outfits.html">Outfits</a></li>
+      <li><a href="itinerary.html">Itinerary</a></li>
+      <li><a href="tips.html">Travel Tips</a></li>
+    </ul>
+  </nav>
+
   <section>
     <div class="reminder">
-      ✈️ <strong>Reminder:</strong> Buy your flights by **September** to get the best rates!
+      ✈️ <strong>Reminder:</strong> Buy your flights by <strong>September</strong> to get the best rates!
     </div>
 
     <div class="itinerary">
@@ -84,17 +110,10 @@
         <li><strong>22 Dec:</strong> Return flight to Hanoi/Johannesburg</li>
       </ul>
     </div>
-
-    <div class="nav">
-      <a href="#packing">Packing List</a>
-      <a href="#outfits">Outfit Planner</a>
-      <a href="#guide">Daily Guide</a>
-      <a href="#tips">Travel Tips</a>
-    </div>
   </section>
 
   <footer>
-    © 2025 Vietnam Travel Countdown
+    © 2025 Vietnam Travel Countdown | Created with ✈️ by Lethabo
   </footer>
 
   <script>
