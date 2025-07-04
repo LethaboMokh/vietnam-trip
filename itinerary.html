@@ -3,24 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Itinerary – Vietnam Trip</title>
+  <title>Vietnam Trip Itinerary</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/747/747376.png" type="image/png" />
   <style>
     body {
+      background: linear-gradient(to bottom right, #FFF8E1, #003366);
+      color: #003366;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4fdfb;
       margin: 0;
       padding: 0;
-      color: #333;
     }
     header {
-      background-color: #20c997;
-      color: white;
-      text-align: center;
+      background-color: #FFD700;
+      color: #003366;
       padding: 25px 15px;
+      text-align: center;
     }
     header h1 {
       margin: 0;
       font-size: 2em;
+    }
+    nav {
+      background-color: #DA291C;
+    }
+    .navbar {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar li {
+      margin: 0;
+    }
+    .navbar a {
+      display: block;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: #FFF8E1;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      background-color: #FFD700;
+      color: #003366;
     }
     section {
       padding: 20px;
@@ -28,17 +54,17 @@
       margin: auto;
     }
     .day {
-      background: white;
+      background: #e7f1ff;
       padding: 15px 20px;
       margin-bottom: 20px;
-      border-left: 5px solid #20c997;
+      border-left: 5px solid #FFD700;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
     .day h2 {
       margin-top: 0;
       font-size: 1.2em;
-      color: #20c997;
+      color: #DA291C;
     }
     .day p {
       margin: 5px 0;
@@ -48,8 +74,8 @@
       text-align: center;
       margin: 30px auto;
       width: fit-content;
-      background: #4dabf7;
-      color: white;
+      background: #FFD700;
+      color: #003366;
       padding: 10px 15px;
       text-decoration: none;
       border-radius: 5px;
@@ -57,7 +83,7 @@
     footer {
       text-align: center;
       font-size: 0.9em;
-      color: #999;
+      color: #003366;
       margin-top: 30px;
       padding-bottom: 20px;
     }
@@ -67,6 +93,16 @@
   <header>
     <h1>Vietnam Trip Itinerary</h1>
   </header>
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packing.html">Packing List</a></li>
+      <li><a href="outfits.html">Outfits</a></li>
+      <li><a href="itinerary.html">Itinerary</a></li>
+      <li><a href="tips.html">Travel Tips</a></li>
+    </ul>
+  </nav>
 
   <section>
     <div class="day">
