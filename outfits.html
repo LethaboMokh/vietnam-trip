@@ -1,26 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vietnam Outfits</title>
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" type="image/svg+xml">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" type="image/svg+xml" />
   <style>
-    body { background-color: #f9f7f1; font-family: 'Georgia', serif; color: #2e2e2e; margin: 0; padding: 0; }
-    header { background: #fff; padding: 20px 40px; display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    header img.flag { width: 40px; height: auto; }
-    header h1 { font-size: 2em; margin: 0; color: #4a4a4a; }
-    nav { background-color: #b22222; }
-    nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; }
-    nav li { display: inline; }
-    nav a { display: block; padding: 14px 18px; color: #fff; font-weight: 600; text-decoration: none; }
-    nav a:hover { background-color: #7b1616; border-radius: 4px; }
-    main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    h2 { color: #b22222; font-size: 1.8rem; margin-bottom: 20px; }
-    ul { padding-left: 20px; font-size: 1.1rem; }
-    li { margin-bottom: 15px; }
-    .outfit-image { width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin: 20px auto; display: block; }
-    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #888; margin-top: 40px; border-top: 1px solid #ddd; }
+    body {
+      background-color: #f9f7f1;
+      font-family: 'Georgia', serif;
+      color: #2e2e2e;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+    header img.flag {
+      width: 40px;
+      height: auto;
+    }
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+      color: #4a4a4a;
+      flex: 1 1 auto;
+    }
+    nav {
+      background-color: #b22222;
+      overflow-x: auto;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    nav li {
+      display: inline;
+    }
+    nav a {
+      display: block;
+      padding: 14px 18px;
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      background-color: #7b1616;
+      border-radius: 4px;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    h2 {
+      color: #b22222;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    ul {
+      padding-left: 20px;
+      font-size: 1.1rem;
+    }
+    li {
+      margin-bottom: 15px;
+    }
+    .outfit-image {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 40px;
+      border-top: 1px solid #ddd;
+    }
+    @media screen and (max-width: 480px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      nav a {
+        font-size: 0.9rem;
+        padding: 12px 10px;
+      }
+      main {
+        padding: 0 15px;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      ul {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -38,8 +128,8 @@
     </ul>
   </nav>
   <main>
-    <img src="https://cdn.pixabay.com/photo/2016/11/21/17/39/beach-1846040_960_720.jpg" alt="Beach outfit inspiration" class="outfit-image">
-    <img src="https://cdn.pixabay.com/photo/2020/01/18/18/39/travel-4775870_960_720.jpg" alt="Travel outfit inspiration" class="outfit-image">
+    <img src="https://cdn.pixabay.com/photo/2018/06/01/17/53/woman-3441055_640.jpg" alt="Beach outfit" class="outfit-image" />
+    <img src="https://cdn.pixabay.com/photo/2020/01/18/18/39/travel-4775870_640.jpg" alt="Travel outfit" class="outfit-image" />
     <h2>Suggested Daily Outfits</h2>
     <ul>
       <li>12 Dec: Airport outfit – comfy layers, trainers and lightweight scarf</li>
