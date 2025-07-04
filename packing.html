@@ -2,240 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vietnam Trip Packing List</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/747/747376.png" type="image/png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Packing List – Vietnam</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" type="image/svg+xml" />
   <style>
     body {
-      background: linear-gradient(to bottom right, #FFF8E1, #003366);
-      color: #003366;
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f9f7f1;
+      color: #2e2e2e;
+      line-height: 1.6;
     }
     header {
-      background-color: #FFD700;
-      color: #003366;
-      padding: 30px;
-      text-align: center;
+      background: #fff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    h1 {
+    header img {
+      width: 40px;
+    }
+    header h1 {
+      font-size: 2rem;
       margin: 0;
-      font-size: 2.2em;
-      font-weight: bold;
     }
     nav {
-      background-color: #DA291C;
+      background: #b22222;
     }
-    .navbar {
+    nav ul {
       list-style: none;
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
+      gap: 30px;
     }
-    .navbar li {
-      margin: 0;
-    }
-    .navbar a {
+    nav a {
+      color: #fff;
+      padding: 14px 18px;
       display: block;
-      padding: 14px 20px;
+      font-weight: 600;
       text-decoration: none;
-      color: #FFF8E1;
-      font-weight: bold;
     }
-    .navbar a:hover {
-      background-color: #FFD700;
-      color: #003366;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      background: #e7f1ff;
-      border-left: 6px solid #4dabf7;
+    nav a:hover {
+      background-color: #7b1616;
       border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
-    ul {
-      padding-left: 20px;
-      font-size: 1.1em;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #003366;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Vietnam Trip Packing List</h1>
-  </header>
-
-  <nav>
-    <ul class="navbar">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="packing.html">Packing List</a></li>
-      <li><a href="outfits.html">Outfits</a></li>
-      <li><a href="itinerary.html">Itinerary</a></li>
-      <li><a href="tips.html">Travel Tips</a></li>
-    </ul>
-  </nav>
-
-  <section>
-    <h2>Essentials to Pack</h2>
-    <ul>
-      <li>Layers for Hanoi’s cool mornings and evenings</li>
-      <li>Swimsuits and beachwear for Phu Quoc</li>
-      <li>Comfortable walking shoes for markets and hikes</li>
-      <li>Reusable water bottle and hand sanitiser</li>
-      <li>Power bank and international plug adapter</li>
-      <li>Light rain jacket (possible showers in Phu Quoc)</li>
-      <li>Sunscreen and sunglasses</li>
-      <li>Travel documents, passport, and copies</li>
-      <li>Medication and personal care items</li>
-    </ul>
-  </section>
-
-  <footer>
-    © 2025 Vietnam Travel Countdown | Packing Tips
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Packing List – Vietnam Trip</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdfdfd;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background-color: #ff4e4e;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    section {
-      padding: 20px;
+    main {
       max-width: 900px;
-      margin: auto;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    h2 {
-      color: #ff4e4e;
-      border-bottom: 2px solid #ffd5d5;
-      padding-bottom: 5px;
-    }
-    .category {
+    .photo {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 10px;
       margin-bottom: 30px;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
+      font-size: 1.1rem;
+      padding-left: 20px;
     }
     li {
-      padding: 8px 0;
-    }
-    input[type="checkbox"] {
-      margin-right: 10px;
-    }
-    a.back {
-      display: inline-block;
-      margin-top: 20px;
-      text-decoration: none;
-      background: #4dabf7;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
+      margin-bottom: 12px;
     }
     footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #999;
-      margin-top: 30px;
-      padding-bottom: 20px;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Vietnam Trip Packing List</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Vietnam flag" />
+    <h1>Packing List</h1>
   </header>
 
-  <section>
-    <div class="category">
-      <h2>📄 Essentials</h2>
-      <ul>
-        <li><input type="checkbox" /> Passport + Visa documents</li>
-        <li><input type="checkbox" /> Travel insurance</li>
-        <li><input type="checkbox" /> Booking confirmations</li>
-        <li><input type="checkbox" /> Currency / travel card</li>
-        <li><input type="checkbox" /> Copies of important docs</li>
-        <li><input type="checkbox" /> Phone + charger + power bank</li>
-        <li><input type="checkbox" /> Plug adapter (type A, C, D)</li>
-      </ul>
-    </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packing.html">Packing</a></li>
+      <li><a href="outfits.html">Outfits</a></li>
+      <li><a href="itinerary.html">Itinerary</a></li>
+      <li><a href="tips.html">Tips</a></li>
+    </ul>
+  </nav>
 
-    <div class="category">
-      <h2>👗 Clothing</h2>
-      <ul>
-        <li><input type="checkbox" /> 3 x Casual outfits (linen, dresses, sets)</li>
-        <li><input type="checkbox" /> Swimwear (2 sets)</li>
-        <li><input type="checkbox" /> Beach cover-up</li>
-        <li><input type="checkbox" /> Windbreaker or light jacket</li>
-        <li><input type="checkbox" /> Sleepwear / lounge set</li>
-        <li><input type="checkbox" /> Shoes: sandals + comfy sneakers</li>
-        <li><input type="checkbox" /> Sun hat / bucket hat</li>
-        <li><input type="checkbox" /> Undergarments + socks</li>
-      </ul>
-    </div>
-
-    <div class="category">
-      <h2>🧼 Toiletries</h2>
-      <ul>
-        <li><input type="checkbox" /> Toothbrush + toothpaste</li>
-        <li><input type="checkbox" /> Skincare minis + sunscreen</li>
-        <li><input type="checkbox" /> Insect repellent</li>
-        <li><input type="checkbox" /> Deodorant</li>
-        <li><input type="checkbox" /> Hairbrush / comb</li>
-        <li><input type="checkbox" /> Shampoo + conditioner (travel size)</li>
-        <li><input type="checkbox" /> Razor + travel towel</li>
-      </ul>
-    </div>
-
-    <div class="category">
-      <h2>💊 Health & Extras</h2>
-      <ul>
-        <li><input type="checkbox" /> Personal meds + painkillers</li>
-        <li><input type="checkbox" /> Hand sanitiser + wipes</li>
-        <li><input type="checkbox" /> Mini first aid kit</li>
-        <li><input type="checkbox" /> Reusable tote bag</li>
-        <li><input type="checkbox" /> Waterproof phone pouch</li>
-        <li><input type="checkbox" /> Journal or book</li>
-      </ul>
-    </div>
-
-    <a href="index.html" class="back">← Back to Home</a>
-  </section>
+  <main>
+    <img class="photo" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=900&q=80" alt="Packing flatlay" />
+    <ul>
+      <li>Passport & visa (if required)</li>
+      <li>Light layers for Hanoi (cool evenings)</li>
+      <li>Swimsuits for Phu Quoc</li>
+      <li>Walking shoes & sandals</li>
+      <li>Rain jacket or poncho</li>
+      <li>Sunscreen & insect repellent</li>
+      <li>Travel adapter & power bank</li>
+      <li>Reusable water bottle</li>
+      <li>Toiletries & medications</li>
+      <li>Copies of important documents</li>
+    </ul>
+  </main>
 
   <footer>
-    © 2025 Vietnam Travel Countdown | Packing Checklist
+    © 2025 Vietnam Travel Countdown | Packing Essentials
   </footer>
 </body>
 </html>
