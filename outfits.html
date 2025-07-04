@@ -3,76 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Outfit Planner – Vietnam Trip</title>
+  <title>Outfit Planner: Vietnam Edition</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/747/747376.png" type="image/png" />
   <style>
     body {
+      background: linear-gradient(to bottom right, #FFF8E1, #003366);
+      color: #003366;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fff8f4;
       margin: 0;
       padding: 0;
-      color: #333;
     }
     header {
-      background-color: #ff4e4e;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      background-color: #FFD700;
+      color: #003366;
       padding: 30px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 15px;
-    }
-    .card h3 {
-      margin-top: 0;
-      font-size: 1.2em;
-      color: #ff4e4e;
-    }
-    .card p {
-      font-size: 0.95em;
-    }
-    a.back {
-      display: block;
       text-align: center;
-      margin: 20px auto;
-      width: fit-content;
-      background: #4dabf7;
-      color: white;
-      padding: 10px 15px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #DA291C;
+    }
+    .navbar {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .navbar li {
+      margin: 0;
+    }
+    .navbar a {
+      display: block;
+      padding: 14px 20px;
       text-decoration: none;
+      color: #FFF8E1;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      background-color: #FFD700;
+      color: #003366;
+    }
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: #e7f1ff;
+      border-left: 6px solid #4dabf7;
       border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    ul {
+      padding-left: 20px;
+      font-size: 1.1em;
+    }
+    li {
+      margin-bottom: 10px;
     }
     footer {
       text-align: center;
+      padding: 20px;
       font-size: 0.9em;
-      color: #999;
-      margin-top: 30px;
-      padding-bottom: 20px;
+      color: #003366;
     }
   </style>
 </head>
@@ -81,100 +78,35 @@
     <h1>Outfit Planner: Vietnam Edition</h1>
   </header>
 
-  <div class="grid">
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?travel,outfit" alt="Travel outfit">
-      <div class="card-content">
-        <h3>12 Dec – Airport Look</h3>
-        <p>Comfy layered outfit for the long haul flight – leggings, sneakers, hoodie, and oversized scarf.</p>
-      </div>
-    </div>
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="packing.html">Packing List</a></li>
+      <li><a href="outfits.html">Outfits</a></li>
+      <li><a href="itinerary.html">Itinerary</a></li>
+      <li><a href="tips.html">Travel Tips</a></li>
+    </ul>
+  </nav>
 
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?dinner,look" alt="Dinner outfit">
-      <div class="card-content">
-        <h3>13 Dec – Dinner Fit</h3>
-        <p>Relaxed but cute: wide-leg trousers, fitted top, and statement earrings for your first night in Hanoi.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?coffee,casual" alt="Coffee day outfit">
-      <div class="card-content">
-        <h3>14 Dec – Chill + Food Tour</h3>
-        <p>Linen set or flowy dress for exploring cafés, the Old Quarter, and pool lounging before the night market.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?boat,outfit" alt="Ha Long outfit">
-      <div class="card-content">
-        <h3>15 Dec – Ha Long Bay</h3>
-        <p>Breathable jumpsuit or activewear + windbreaker. Easy layers for boat breeze & photos on deck.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?resort,robe" alt="Relaxed outfit">
-      <div class="card-content">
-        <h3>16 Dec – Rooftop & Chill</h3>
-        <p>Kaftan or cotton lounge set + sandals. Perfect for strolling to the observation deck or chilling at the hotel.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?adventure,travel" alt="Ninh Binh outfit">
-      <div class="card-content">
-        <h3>17 Dec – Ninh Binh</h3>
-        <p>Light activewear, trainers, sun hat. Ideal for boat rides & climbing steps to the viewpoint.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?beach,coverup" alt="Phu Quoc outfit">
-      <div class="card-content">
-        <h3>18 Dec – Hotel Beach</h3>
-        <p>Swimsuit + coverup or beach maxi. Relax on your private beach, then dress up lightly for the night market.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?vacation,style" alt="Bar outfit">
-      <div class="card-content">
-        <h3>19 Dec – Beach & Bars</h3>
-        <p>Resort wear or shorts + cute top. Easy-going outfit for drinks and wandering along the shoreline.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?snorkel,beachwear" alt="Island hopping outfit">
-      <div class="card-content">
-        <h3>20 Dec – Island Hopping</h3>
-        <p>Swimsuit, rash guard, water shoes. Snorkel ready with a dry bag and sun hat.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?spa,relax" alt="Spa day outfit">
-      <div class="card-content">
-        <h3>21 Dec – Resort Day</h3>
-        <p>Spa robe, loungewear, or cute PJs. Today’s for room service, spa, and soaking in your hotel stay.</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="https://source.unsplash.com/featured/?plane,comfort" alt="Return outfit">
-      <div class="card-content">
-        <h3>22–23 Dec – Long Flight Home</h3>
-        <p>Comfort-first layers for airport naps: oversized hoodie, joggers, socks, and crossbody bag.</p>
-      </div>
-    </div>
-  </div>
-
-  <a href="index.html" class="back">← Back to Home</a>
+  <section>
+    <h2>Day-by-Day Outfit Suggestions</h2>
+    <ul>
+      <li><strong>12 Dec:</strong> Comfortable airport outfit – layers, easy shoes</li>
+      <li><strong>13 Dec:</strong> Dinner fit – relaxed yet neat</li>
+      <li><strong>14 Dec:</strong> Casual daywear – perfect for walking & coffee shops</li>
+      <li><strong>15 Dec:</strong> Light, breathable clothes for Ha Long Bay cruise</li>
+      <li><strong>16 Dec:</strong> Relaxed resort wear for lounging</li>
+      <li><strong>17 Dec:</strong> Activewear & trainers for Ninh Binh exploration</li>
+      <li><strong>18 Dec:</strong> Beachwear and casual evening wear for Phu Quoc night market</li>
+      <li><strong>19 Dec:</strong> Comfortable, light clothes for beach and bars</li>
+      <li><strong>20 Dec:</strong> Snorkelling gear or swimwear for island hopping</li>
+      <li><strong>21 Dec:</strong> Comfortable hotel leisurewear</li>
+      <li><strong>22 Dec:</strong> Flight outfit – layers and comfort</li>
+    </ul>
+  </section>
 
   <footer>
-    © 2025 Vietnam Travel Countdown | Outfit Board
+    © 2025 Vietnam Travel Countdown | Outfit Planner
   </footer>
 </body>
 </html>
