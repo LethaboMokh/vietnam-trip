@@ -1,118 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Travel Tips – Vietnam</title>
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" type="image/svg+xml" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vietnam Travel Tips</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" type="image/svg+xml">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #f9f7f1;
-      color: #2e2e2e;
-    }
-    header {
-      background: #fff;
-      padding: 20px 40px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    header img {
-      width: 40px;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin: 0;
-    }
-    nav {
-      background: #b22222;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-    nav a {
-      color: #fff;
-      padding: 14px 18px;
-      display: block;
-      font-weight: 600;
-      text-decoration: none;
-    }
-    nav a:hover {
-      background-color: #7b1616;
-      border-radius: 5px;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    ul {
-      padding-left: 20px;
-      font-size: 1.1rem;
-    }
-    li {
-      margin-bottom: 12px;
-    }
-    img {
+    body { background-color: #f9f7f1; font-family: 'Georgia', serif; color: #2e2e2e; margin: 0; padding: 0; }
+    header { background: #fff; padding: 20px 40px; display: flex; align-items: center; gap: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); flex-wrap: wrap; }
+    header img.flag { width: 40px; height: auto; }
+    header h1 { font-size: 2em; margin: 0; color: #4a4a4a; flex: 1 1 auto; }
+    nav { background-color: #b22222; overflow-x: auto; }
+    nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; flex-wrap: wrap; }
+    nav li { display: inline; }
+    nav a { display: block; padding: 14px 18px; color: #fff; font-weight: 600; text-decoration: none; font-size: 1rem; }
+    nav a:hover { background-color: #7b1616; border-radius: 4px; }
+    main { max-width: 900px; margin: 40px auto; padding: 0 20px; box-sizing: border-box; }
+    h2 { color: #b22222; font-size: 1.8rem; margin-bottom: 20px; }
+    ul { padding-left: 20px; font-size: 1.1rem; }
+    li { margin-bottom: 15px; }
+    .tip-image {
       width: 100%;
-      max-height: 350px;
-      object-fit: cover;
+      max-width: 400px;
       border-radius: 10px;
-      margin-bottom: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      display: block;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #888;
-      font-size: 0.9rem;
-      border-top: 1px solid #ddd;
-      margin-top: 60px;
+    footer { text-align: center; padding: 20px; font-size: 0.9em; color: #888; margin-top: 40px; border-top: 1px solid #ddd; }
+
+    @media screen and (max-width: 480px) {
+      header h1 { font-size: 1.6rem; }
+      nav a { font-size: 0.9rem; padding: 12px 10px; }
+      main { padding: 0 15px; }
+      h2 { font-size: 1.5rem; }
+      ul { font-size: 1rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Vietnam flag" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="Vietnam flag" class="flag" />
     <h1>Vietnam Travel Tips</h1>
   </header>
-
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="packing.html">Packing</a></li>
+      <li><a href="packing.html">Packing List</a></li>
       <li><a href="outfits.html">Outfits</a></li>
       <li><a href="itinerary.html">Itinerary</a></li>
-      <li><a href="tips.html">Tips</a></li>
+      <li><a href="tips.html">Travel Tips</a></li>
     </ul>
   </nav>
-
   <main>
-  <img src="https://cdn.pixabay.com/photo/2018/06/01/17/53/woman-3441055_960_720.jpg" alt="Vietnam weather and travel" class="tip-image" style="width:100%; max-width:400px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); margin: 20px auto; display: block;">
-  <img src="https://cdn.pixabay.com/photo/2019/08/10/21/41/vietnam-4396636_960_720.jpg" alt="Vietnam local markets" class="tip-image" style="width:100%; max-width:400px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); margin: 20px auto; display: block;">
-  <img src="https://cdn.pixabay.com/photo/2020/05/07/10/03/holiday-5140028_960_720.jpg" alt="Travel essentials flatlay" class="tip-image" style="width:100%; max-width:400px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); margin: 20px auto; display: block;">
-   <h2>Travel Tips</h2>
+    <img src="https://cdn.pixabay.com/photo/2018/06/01/17/53/woman-3441055_640.jpg" alt="Vietnam travel weather" class="tip-image">
+    <img src="https://cdn.pixabay.com/photo/2019/08/10/21/41/vietnam-4396636_640.jpg" alt="Vietnam market shopping" class="tip-image">
+    <img src="https://cdn.pixabay.com/photo/2020/05/07/10/03/holiday-5140028_640.jpg" alt="Packing flatlay" class="tip-image">
+
+    <h2>Useful Travel Tips</h2>
     <ul>
-      <li>Carry Vietnamese Dong – many places are cash-only</li>
-      <li>Use Grab (app) for reliable transportation</li>
-      <li>Street food is safe if the stall is busy (locals know best!)</li>
-      <li>Respect temple dress codes – cover shoulders/knees</li>
-      <li>Keep mosquito repellent handy, especially in Phu Quoc</li>
-      <li>December is dry and cool — bring light layers</li>
-      <li>Always agree on a price before buying or riding</li>
-      <li>Basic Vietnamese phrases go a long way (like “cảm ơn” = thank you)</li>
+      <li><strong>Weather:</strong> December is cool and dry in Hanoi (~15–22°C) and warm in Phu Quoc (~25–30°C). Layer wisely.</li>
+      <li><strong>Currency:</strong> Vietnamese Dong (VND). Carry cash for markets, but most big stores accept cards.</li>
+      <li><strong>Connectivity:</strong> Get a local SIM card at the airport for cheap data. Viettel is reliable.</li>
+      <li><strong>Shopping:</strong> Great buys include silk, coffee, lanterns, and local snacks. Bargain gently at markets!</li>
+      <li><strong>Etiquette:</strong> Dress modestly at temples, remove shoes when entering homes or certain places.</li>
+      <li><strong>Sunscreen & Mosquito Repellent:</strong> Must-haves, especially in Phu Quoc.</li>
     </ul>
   </main>
-
   <footer>
-    © 2025 Vietnam Travel Countdown | Practical Travel Tips
+    © 2025 Vietnam Travel Countdown | Crafted with ❤️ by Lethabo
   </footer>
 </body>
 </html>
