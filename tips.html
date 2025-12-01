@@ -64,8 +64,44 @@
       <li><strong>Etiquette:</strong> Dress modestly at temples, remove shoes when entering homes or certain places.</li>
       <li><strong>Sunscreen & Mosquito Repellent:</strong> Must-haves, especially in Phu Quoc.</li>
     </ul>
+<style>
+  .weather-card {
+    font-family: 'Arial', sans-serif;
+    padding: 18px;
+    border-radius: 16px;
+    max-width: 260px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6px);
+    color: #3a3a3a;
+    border: 1px solid rgba(200, 160, 90, 0.25); /* subtle gold tint */
+  }
 
-    
+  .weather-title {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #b79d63; /* muted gold */
+    letter-spacing: 0.5px;
+  }
+
+  .weather-temp {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: #2d2d2d;
+  }
+
+  .weather-cond {
+    margin: 3px 0 0 0;
+    font-size: 15px;
+    opacity: 0.8;
+  }
+
+  .weather-wrap {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 </style>
 
 <div class="weather-wrap">
@@ -109,6 +145,7 @@
   loadWeather(21.0245, 105.8412, "hanoi-temp", "hanoi-cond");
   loadWeather(10.289, 103.984, "pq-temp", "pq-cond");
 </script>
+    
 
   </main>
   <footer>
