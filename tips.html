@@ -70,56 +70,86 @@
   <p id="hanoi-temp">Loading…</p>
   <p id="hanoi-cond"></p>
 </div>
+<style>
+  .weather-card {
+    font-family: 'Arial', sans-serif;
+    padding: 18px;
+    border-radius: 16px;
+    max-width: 260px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(6px);
+    color: #3a3a3a;
+    border: 1px solid rgba(200, 160, 90, 0.25); /* subtle gold tint */
+  }
 
-<script>
-  fetch("https://api.open-meteo.com/v1/forecast?latitude=21.0245&longitude=105.8412&current_weather=true")
-    .then(res => res.json())
-    .then(data => {
-      const t = data.current_weather.temperature;
-      const w = data.current_weather.weathercode;
-      const conditions = {
-        0:"Clear",
-        1:"Mostly Clear",
-        2:"Partly Cloudy",
-        3:"Cloudy",
-        45:"Foggy",
-        48:"Foggy",
-        51:"Light Drizzle",
-        61:"Rain",
-        71:"Snow",
-        95:"Thunderstorms"
-      };
-      document.getElementById("hanoi-temp").innerText = `${t}°C`;
-      document.getElementById("hanoi-cond").innerText = conditions[w] || "—";
-    });
-</script>
-    <div id="weather-phuquoc" style="font-family: Arial; padding: 15px; border-radius: 12px; background:#f4f4f4; max-width:300px;">
-  <h3 style="margin-top:0;">Phu Quoc Weather</h3>
-  <p id="pq-temp">Loading…</p>
-  <p id="pq-cond"></p>
+  .weather-title {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #b79d63; /* muted gold */
+    letter-spacing: 0.5px;
+  }
+
+  .weather-temp {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    color: #2d2d2d;
+  }
+
+  .weather-cond {
+    margin: 3px 0 0 0;
+    font-size: 15px;
+    opacity: 0.8;
+  }
+
+  .weather-wrap {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+</style>
+
+<div class="weather-wrap">
+  <!-- Hanoi -->
+  <div class="weather-card">
+    <div class="weather-title">Hanoi</div>
+    <div id="hanoi-temp" class="weather-temp">—</div>
+    <div id="hanoi-cond" class="weather-cond">Loading…</div>
+  </div>
+
+  <!-- Phu Quoc -->
+  <div class="weather-card">
+    <div class="weather-title">Phu Quoc</div>
+    <div id="pq-temp" class="weather-temp">—</div>
+    <div id="pq-cond" class="weather-cond">Loading…</div>
+  </div>
 </div>
 
 <script>
-  fetch("https://api.open-meteo.com/v1/forecast?latitude=10.289&longitude=103.984&current_weather=true")
-    .then(res => res.json())
-    .then(data => {
-      const t = data.current_weather.temperature;
-      const w = data.current_weather.weathercode;
-      const conditions = {
-        0:"Clear",
-        1:"Mostly Clear",
-        2:"Partly Cloudy",
-        3:"Cloudy",
-        45:"Foggy",
-        48:"Foggy",
-        51:"Light Drizzle",
-        61:"Rain",
-        71:"Snow",
-        95:"Thunderstorms"
-      };
-      document.getElementById("pq-temp").innerText = `${t}°C`;
-      document.getElementById("pq-cond").innerText = conditions[w] || "—";
-    });
+  function loadWeather(lat, lon, tempEl, condEl) {
+    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`)
+      .then(res => res.json())
+      .then(data => {
+        const t = data.current_weather.temperature;
+        const w = data.current_weather.weathercode;
+        const conditions = {
+          0:"Clear Skies",
+          1:"Mostly Clear",
+          2:"Partly Cloudy",
+          3:"Cloudy",
+          45:"Foggy",
+          51:"Light Drizzle",
+          61:"Rain",
+          95:"Thunderstorms"
+        };
+        document.getElementById(tempEl).innerText = `${t}°C`;
+        document.getElementById(condEl).innerText = conditions[w] || "—";
+      });
+  }
+
+  loadWeather(21.0245, 105.8412, "hanoi-temp", "hanoi-cond");
+  loadWeather(10.289, 103.984, "pq-temp", "pq-cond");
 </script>
 
   </main>
