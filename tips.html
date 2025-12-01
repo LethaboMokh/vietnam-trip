@@ -64,6 +64,64 @@
       <li><strong>Etiquette:</strong> Dress modestly at temples, remove shoes when entering homes or certain places.</li>
       <li><strong>Sunscreen & Mosquito Repellent:</strong> Must-haves, especially in Phu Quoc.</li>
     </ul>
+
+    <div id="weather-hanoi" style="font-family: Arial; padding: 15px; border-radius: 12px; background:#f4f4f4; max-width:300px;">
+  <h3 style="margin-top:0;">Hanoi Weather</h3>
+  <p id="hanoi-temp">Loading…</p>
+  <p id="hanoi-cond"></p>
+</div>
+
+<script>
+  fetch("https://api.open-meteo.com/v1/forecast?latitude=21.0245&longitude=105.8412&current_weather=true")
+    .then(res => res.json())
+    .then(data => {
+      const t = data.current_weather.temperature;
+      const w = data.current_weather.weathercode;
+      const conditions = {
+        0:"Clear",
+        1:"Mostly Clear",
+        2:"Partly Cloudy",
+        3:"Cloudy",
+        45:"Foggy",
+        48:"Foggy",
+        51:"Light Drizzle",
+        61:"Rain",
+        71:"Snow",
+        95:"Thunderstorms"
+      };
+      document.getElementById("hanoi-temp").innerText = `${t}°C`;
+      document.getElementById("hanoi-cond").innerText = conditions[w] || "—";
+    });
+</script>
+    <div id="weather-phuquoc" style="font-family: Arial; padding: 15px; border-radius: 12px; background:#f4f4f4; max-width:300px;">
+  <h3 style="margin-top:0;">Phu Quoc Weather</h3>
+  <p id="pq-temp">Loading…</p>
+  <p id="pq-cond"></p>
+</div>
+
+<script>
+  fetch("https://api.open-meteo.com/v1/forecast?latitude=10.289&longitude=103.984&current_weather=true")
+    .then(res => res.json())
+    .then(data => {
+      const t = data.current_weather.temperature;
+      const w = data.current_weather.weathercode;
+      const conditions = {
+        0:"Clear",
+        1:"Mostly Clear",
+        2:"Partly Cloudy",
+        3:"Cloudy",
+        45:"Foggy",
+        48:"Foggy",
+        51:"Light Drizzle",
+        61:"Rain",
+        71:"Snow",
+        95:"Thunderstorms"
+      };
+      document.getElementById("pq-temp").innerText = `${t}°C`;
+      document.getElementById("pq-cond").innerText = conditions[w] || "—";
+    });
+</script>
+
   </main>
   <footer>
     © 2025 Vietnam Travel Countdown | Crafted with ❤️ by Lethabo
